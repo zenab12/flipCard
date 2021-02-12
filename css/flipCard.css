@@ -1,0 +1,148 @@
+.resume 
+{
+    display: flex;
+    flex-direction:column;
+}
+.resume h2
+{
+    color: #fff;
+    font-size: 35px;
+    background:darkred;
+    justify-content: center;
+    align-self: center;
+    padding: 10px;
+    text-align: center;
+    width: 400px
+}
+
+
+.resume .cardResume
+{
+    width: 400px;
+    height: 500px;
+    transform-origin: center;
+    perspective: 1000px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    margin :0 auto;
+    margin-bottom: 10px;
+}
+.resume .cardResume > div
+{
+    width:400px;
+    height: 500px;
+    position: absolute;
+  border-radius:20px 30px 20px 30px
+    
+}
+.cardResume:hover
+
+{
+    transform: rotateY(180deg)
+}
+.resume .front
+{
+   /* background:repeating-linear-gradient(10deg,#fff,rgb(49, 3, 39),rgb(91, 12, 74));;*/
+    z-index: 2;
+    background:repeating-linear-gradient(10deg,rgb(10, 0, 0),rgb(49, 3, 7),rgb(115, 7, 16));
+    backface-visibility: hidden;
+    display:flex;
+    flex-direction: column;
+    box-shadow: 10px 3px 6px 1px lightgrey;
+
+}
+.front:hover 
+{
+    box-shadow:1px 1px 1px gray
+}
+.resume .front .head
+{
+    background:#fff;
+    height: 100px;
+    border-radius: 20px 30px 0px 0px ;
+}
+
+.head img
+{
+    width: 150px;
+    height: 120px;
+    border-radius:20px;
+    position: relative;
+    top:7px;    
+    margin: 10px 30%;
+    
+}
+.front p
+{
+    line-height:30px;
+    text-align: center;
+    justify-content:center;
+    color: snow;
+    line-height: 1.5rem;
+    margin:50px;
+    margin-top: 110px;
+    margin-bottom: 20px;
+}
+.front span
+{
+    color:rgb(199, 173, 100);
+    font-size: 22px;
+        ;
+        font-weight: bold;
+        text-align: right;
+        margin-right: 20px;
+        margin-top: 90px;
+    
+}
+.resume .back
+{
+    background:repeating-linear-gradient(10deg,rgb(10, 0, 0),rgb(49, 3, 7),rgb(115, 7, 16));
+    z-index: 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.cardResume .back ul
+{
+   
+    list-style: none;
+    line-height: 2;
+    color: #fff;
+    font-weight: bold;
+    text-align: justify;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.resume button
+{
+    background-color:#fff;
+    border:4px double rosybrown;
+    color:darkred;
+    margin-right: 10px;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 10px;
+    transition: all .6s ease-in-out;
+    padding:1rem;
+    margin: 20px auto;
+    font-weight: bold;
+    width: 200px
+}
+
+.resume button:hover
+{
+background-color: darkred;
+color:#fff;
+border-color:#fff;
+}
+
